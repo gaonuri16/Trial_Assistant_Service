@@ -2,102 +2,221 @@
 <html lang="en">
 
 <head>
-    <title>Zay Shop - About Page</title>
+    <title>등재신청자 상세정보 조회 기관추천조력자</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="apple-touch-icon" href="assets/img/apple-icon.png">
-    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico">
+    <link rel="apple-touch-icon" href="assetss/img/apple-icon.png">
+    <link rel="shortcut ico n" type="image/x-icon" href="assets/img/favicon.ico">
 
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/templatemo.css">
-    <link rel="stylesheet" href="assets/css/custom.css">
 
     <!-- Load fonts style after rendering the layout styles -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;700;900&display=swap">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;700;900&display=swap">
     <link rel="stylesheet" href="assets/css/fontawesome.min.css">
-<!--
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+    <!--
     
 TemplateMo 559 Zay Shop
 
 https://templatemo.com/tm-559-zay-shop
 
 -->
-<style>
-.rc-btn{
-  border-radius: 5px;
-  border: 1px solid #8a8a8a;
-  background: #eeeeee;
-  padding: 5px;
-  margin-bottom: 10px;
-  margin-left: 813px;
-}
-.applicant-detail-content{
-  width: 100%;
-  padding-top: 30px;
-  height: 40em;
-}
-.applicant-detail-content textarea:nth-child(1){
-  float: left;
-  width: 70%;
-  margin-right: 20px;
-  height: 100%;
-  border-radius: 5px;
-  border: 1px solid #d6d6d6;
-  padding: 10px;
-  resize: none;
-}
-.applicant-detail-content textarea:nth-child(2){
-  width: 27%;
-  height: 100%;
-  border-radius: 5px;
-  border: 1px solid #d6d6d6;
-  padding: 10px;
-  resize: none;
-}
-.category-content input{
-    width: 17px;
-    height: 17px;
-    margin-right: 8px;
-}
-.approv-btn{
-  margin-top: 20px;
-  border-radius: 3px;
-  border: 1px solid #0565ff;
-  background: #116cff;
-  padding: 5px;
-  color: white;
-  display: flex;
-  margin-left: 880px;
-}
 
-</style>
+    <style>
+        .notice-regi-title {
+            margin-left: 40%;
+        }
+
+        section {
+            height: 80% !important;
+        }
+
+        .notice-regi-text {
+            height: 70%;
+        }
+
+        form {
+            padding-bottom: 20px;
+        }
+
+        .notice-modi-btn {
+            margin-right: 20px;
+        }
+
+        .input-group-text {
+            width: 130px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .file-btn {
+            font-size: 15px !important;
+            font-weight: 500;
+        }
+
+        .sec-list {
+            padding: 10% !important;
+        }
+
+
+        /* 여기서부터 추가 */
+        .form-total {
+            padding-top: 100px;
+        }
+
+        .side-sec {
+            float: left;
+            width: 10%;
+            margin-left: 0;
+        }
+
+        .total-sec {
+            width: 70%;
+            float: right;
+            margin-right: 100px;
+        }
+
+        .notice-regi-btn {
+            margin-top: 10px;
+            float: right;
+            padding-bottom: 100px;
+        }
+
+        /*
+    왼쪽 사이드 카테고리
+*/
+
+        .col-lg-3 {
+            margin-top: 150px;
+            margin-left: 100px;
+            width: 360px;
+        }
+
+        .pb-3 a {
+            font-weight: bold;
+            padding-bottom: 15px;
+        }
+
+        .pb-3 a:hover {
+            color: #5a95f5;
+        }
+
+        /*-----------------------------------------------------------------*/
+
+        /*
+    사이드 버튼 이벤트 효과
+*/
+
+        .action-btn {
+            padding: 15px 100px;
+            margin: 10px 4px;
+            font-family: sans-serif;
+            text-transform: uppercase;
+            text-align: center;
+            position: relative;
+            text-decoration: none;
+            display: inline-block;
+
+        }
+
+        .action-btn::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            display: block;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            transform: scaleX(.3);
+            opacity: 0;
+            transition: all .3s
+        }
+
+        .action-btn:hover::before {
+            opacity: 1;
+            background-color: #212934;
+            -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+            transition: -webkit-transform .6s cubic-bezier(.08, .35, .13, 1.02), opacity .4s;
+            transition: transform .6s cubic-bezier(.08, .35, .13, 1.02), opacity;
+        }
+
+        .pb-3 a:hover {
+            color: white;
+        }
+
+        /*-----------------------------------------------------------------*/
+
+
+        /* title style */
+        .announcement-detail-title {
+            width: 100%;
+            margin-bottom: 80px;
+        }
+
+        .announcement-detail-title h3 {
+            text-align: center;
+            margin: 0 auto;
+            border-top: 2px solid #888888;
+            border-bottom: 2px solid #888888;
+            padding: 15px;
+            color: #808080;
+            width: 25%;
+            font-size: 20px;
+        }
+
+        /* 푸터 */
+        .under-footer {
+            height: 150px;
+        }
+
+        .footer-box2 {
+            padding: 20px 0px;
+            position: relative;
+            left: 160px;
+            bottom: 115px;
+            font-size: 17px !important;
+            font-weight: 100 !important;
+            line-height: 30px;
+        }
+    </style>
 </head>
 
-<body>
+<body class="clearfix">
+    <!-- 추가 -->
     <!-- Start Top Nav -->
     <nav class="navbar navbar-expand-lg bg-dark navbar-light d-none d-lg-block" id="templatemo_nav_top">
         <div class="container text-light">
             <div class="w-100 d-flex justify-content-between">
                 <div>
                     <i class="fa fa-envelope mx-2"></i>
-                    <a class="navbar-sm-brand text-light text-decoration-none" href="mailto:info@company.com">바롬@company.com</a>
+                    <a class="navbar-sm-brand text-light text-decoration-none"
+                        href="mailto:info@company.com">바롬@company.com</a>
                     <i class="fa fa-phone mx-2"></i>
-                    <a class="navbar-sm-brand text-light text-decoration-none" href="tel:010-1234-1234">010-1234-1234</a>
+                    <a class="navbar-sm-brand text-light text-decoration-none"
+                        href="tel:010-1234-1234">010-1234-1234</a>
                 </div>
                 <div>
-                    <a class="text-light" id="topnav" href="index.html" target="_blank" rel="sponsored"><i class="fa-sm fa-fw me-2"></i>
+                    <a class="text-light" id="topnav" href="index.html" target="_blank" rel="sponsored"><i
+                            class="fa-sm fa-fw me-2"></i>
                         HOME
-                        </a>
-                        <a class="text-light" id="topnav" href="#" target="_blank"><i class="fa-sm fa-fw me-2"></i>
+                    </a>
+                    <a class="text-light" id="topnav" href="#" target="_blank"><i class="fa-sm fa-fw me-2"></i>
                         로그인
-                        </a>
-                        <a class="text-light" id="topnav" href="#" target="_blank"><i class="fa-sm fa-fw me-2"></i>
+                    </a>
+                    <a class="text-light" id="topnav" href="#" target="_blank"><i class="fa-sm fa-fw me-2"></i>
                         회원가입
                     </a>
-                    <a class="text-light" href="https://www.facebook.com/scourtkorea" target="_blank" rel="sponsored"><i class="fab fa-facebook-f fa-sm fa-fw me-2"></i></a>
-                    <a class="text-light" href="https://www.instagram.com/scourtkorea/" target="_blank"><i class="fab fa-instagram fa-sm fa-fw me-2"></i></a>
-                    <a class="text-light" href="https://twitter.com/scourtkorea" target="_blank"><i class="fab fa-twitter fa-sm fa-fw me-2"></i></a>
+                    <a class="text-light" href="https://www.facebook.com/scourtkorea" target="_blank" rel="sponsored"><i
+                            class="fab fa-facebook-f fa-sm fa-fw me-2"></i></a>
+                    <a class="text-light" href="https://www.instagram.com/scourtkorea/" target="_blank"><i
+                            class="fab fa-instagram fa-sm fa-fw me-2"></i></a>
+                    <a class="text-light" href="https://twitter.com/scourtkorea" target="_blank"><i
+                            class="fab fa-twitter fa-sm fa-fw me-2"></i></a>
                 </div>
             </div>
         </div>
@@ -115,12 +234,15 @@ https://templatemo.com/tm-559-zay-shop
             </a>
             <!-- 메인화면으로 돌아가는 화면  -->
 
-            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#templatemo_main_nav" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span> 
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
+                data-bs-target="#templatemo_main_nav" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
             </button>
             <!-- 이게 화면을 줄였을 때 중분류를 볼 수 있는 토클 박스  -->
 
-            <div class="align-self-center collapse navbar-collapse flex-fill  d-lg-flex justify-content-lg-between" id="templatemo_main_nav">
+            <div class="align-self-center collapse navbar-collapse flex-fill  d-lg-flex justify-content-lg-between"
+                id="templatemo_main_nav">
                 <div class="flex-fill">
                     <ul class="header_text nav navbar-nav d-flex justify-content-between mx-lg-auto ">
                         <li class="nav-item">
@@ -145,202 +267,282 @@ https://templatemo.com/tm-559-zay-shop
 
         </div>
 
-        <div class="dropdown" id ="dropdownbar">
-                            
-                <button class="btn btn-secondary dropdown-toggle btn-group-lg" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false" style="background-color: white; border: 0px;">
-                    <i class="bi bi-person-square" style="font-size: 30px; color: black;"></i>
-                    <!-- 아이콘 넣음  -->
-                </button>
-                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                    <li><a class="dropdown-item b1" href="#">로그인</a></li>
-                    <li><a class="dropdown-item b1" href="#" aria-current="true">회원가입</a></li>
-                    <li><a class="dropdown-item b1" href="#">마이페이지</a></li>
-                    <li><a class="dropdown-item b1" href="#">로그아웃</a></li>
-                </ul>
+        <div class="dropdown" id="dropdownbar">
+
+            <button class="btn btn-secondary dropdown-toggle btn-group-lg" type="button" id="dropdownMenuButton1"
+                data-bs-toggle="dropdown" aria-expanded="false" style="background-color: white; border: 0px;">
+                <i class="bi bi-person-square" style="font-size: 30px; color: black;"></i>
+                <!-- 아이콘 넣음  -->
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                <li><a class="dropdown-item b1" href="#">로그인</a></li>
+                <li><a class="dropdown-item b1" href="#" aria-current="true">회원가입</a></li>
+                <li><a class="dropdown-item b1" href="#">마이페이지</a></li>
+                <li><a class="dropdown-item b1" href="#">로그아웃</a></li>
+            </ul>
         </div>
     </nav>
 
-    <!-- Modal -->
-    <div class="modal fade bg-white" id="templatemo_search" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-       
-    </div>
+    <!-- Close Header -->
+
+    <!-- side바 추가 -->
+    <div class="total clearfix">
+        <!-- form을 감싸고 있음-->
+        <div class="container side-sec">
+            <div class="row">
+
+                <div class="col-lg-3">
+                    <h1 class="h2 pb-4">MY PAGE</h1>
 
 
 
-
-    <!-- Start Section -->
-    <section class="container py-5" style="width: 1000px;">
-      <div class="announcement-detail-title">
-        <h3>승인내역 변경</h3>
-      </div>
-      <button class="rc-btn" >평정기준표 보기</button>
-      <div class="announcement-detail-view" >
-        <!--start first-line-->
-       <div class="first-detail-line">
-            <div class="category">
-                <p>신청번호</p>
+                    <ul class="list-unstyled templatemo-accordion">
+                        <li class="pb-3">
+                            <a class="collapsed d-flex justify-content-between h3 text-decoration-none"
+                                href="mypage_ins.html">
+                                MY INFO
+                            </a>
+                        </li>
+                        <li class="pb-3">
+                            <a class="collapsed d-flex justify-content-between h3 text-decoration-none myInfo" href="#">
+                                조력자 신청/선정 현황
+                            </a>
+                        </li>
+                        <li class="pb-3">
+                            <a class="collapsed d-flex justify-content-between h3 text-decoration-none" href="#">
+                                MY FAQ
+                            </a>
+                        </li>
+                        <li class="pb-3">
+                            <a class="collapsed d-flex justify-content-between h3 text-decoration-none"
+                                href="index.html">
+                                로그아웃
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-            <div class="category-content">
-                185
-            </div>
-            <div class="category">
-              <p>신청자</p>
-          </div>
-          <div class="category-content">
-              김고통
-          </div>
-            
-       </div>
-        <!--end first-line-->
-        <!--start second-line-->
-       
-       <!--end second-line-->
-       <!--start third-line-->
-       <div class="third-detail-line">
-            <div class="category">
-                <p>분류</p>
-            </div>
-            <div class="category-content">
-                기관추천조력자
-            </div>
-            <!-- <div class="category">
-                <p>부적격여부</p>
-            </div>
-            <div class="category-content">
-              <input type="radio" name="group1" value="해당">해당
-              <input type="radio" name="group1" value="비해당">비해당
-            </div> -->
         </div>
-   <!--end third-line-->
-   <!--start second-line-->
-       <div class="second-detail-line">
-            <!-- <div class="category">
-                <p>승인여부</p>
-            </div>
-            <div class="category-content">
-                <input type="radio" name="group2" value="승인">승인
-                <input type="radio" name="group2" value="미승인">미승인
-            </div> -->
-            <div class="category">
-                <p>신청일</p>
-            </div>
-            <div class="category-content">
-                2022/08/03
-            </div>
-       </div>
-       <div class="second-detail-line">
-          <div class="category">
-              <p>승인상태</p>
-          </div>
-          <div class="category-content">
-                <input type="radio" name="group2" value="승인">승인
-                <input type="radio" name="group2" value="미승인">미승인
-          </div>
-          <div class="category">
-              <p>승인날짜</p>
-          </div>
-          <div class="category-content">
-              2022/08/03
-          </div>
-        </div>
-        <button class="approv-btn">승인변경</button>
-    </div>
-    </section>
-    <!-- End Section -->
 
-    <!-- Start Footer -->
+
+
+
+
+
+
+        <!-- Start Categories of The Month -->
+        <form class="form-total">
+            <section class="py-3 total-sec">
+
+                <div class="table-box col-lg second-section">
+
+                    <!-- 타이틀 추가 -->
+                    <div class="announcement-detail-title">
+                        <h3>신청자 승인 변경</h3>
+                    </div>
+
+                    <div>
+                        <div style="display: flex; justify-content: end; margin-bottom: 20px;">
+                            <button class="btn btn-outline-secondary" type="file"
+                                id="inputGroupFileAddon04">평정기준표</button>
+                        </div>
+                        <div>
+                            <div>
+                                <div class="input-group mb-3">
+
+                                    <span class="input-group-text">신청번호</span>
+                                    <input type="text" class="form-control"
+                                        aria-label="Text input with segmented dropdown button">
+                                    <span class="input-group-text">신청자</span>
+                                    <input type="text" class="form-control"
+                                        aria-label="Text input with segmented dropdown button">
+                                </div>
+
+                                <div class="input-group mb-3">
+
+                                    <span class="input-group-text">분류</span>
+                                    <input type="text" class="form-control"
+                                        aria-label="Text input with segmented dropdown button">
+
+                                </div>
+
+                                <div class="input-group mb-3">
+
+                                    <span class="input-group-text">신청일</span>
+                                    <input type="text" class="form-control"
+                                        aria-label="Text input with segmented dropdown button">
+
+                                </div>
+                                <div class="input-group mb-3">
+
+                                    <span class="input-group-text">승인 상태</span>
+                                    <div class="category-content" style="border: 1px solid #d6d6d6; padding:0 20px; display: flex; align-items: center;" >
+                                        <input type="radio" name="group2" value="승인">&nbsp;<h6 style="margin-top: 7px;">승인</h6> &nbsp;
+                                        <input type="radio" name="group2" value="미승인">&nbsp;<h6 style="margin-top: 7px;">미승인</h6> &nbsp;
+                                    </div>
+
+                                    <span class="input-group-text">승인 날짜</span>
+                                    <input type="text" class="form-control"
+                                        aria-label="Text input with segmented dropdown button">
+
+                                </div>
+
+
+
+
+
+                            </div>
+
+                        </div>
+
+                        <!-- faq를 작성한 사용자만(아이디로 비교) 수정버튼 활성화 -->
+                        <div class="notice-regi-btn">
+                            <button class="btn btn-outline-secondary" type="file" id="inputGroupFileAddon04">취소</button>
+                            <button class="btn btn-outline-secondary" type="file" id="inputGroupFileAddon04">승인변경하기</button>
+                            
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+
+
+
+            </section>
+        </form>
+
+    </div>
+    <!-- End Categories of The Month -->
+
+
+    <!-- Start Featured Product -->
+
+
+
+    <!-- Start Footer 회원 -->
     <footer class="bg-dark" id="tempaltemo_footer">
         <div class="container">
             <div class="row">
 
-                <div class="col-md-4 pt-5">
-                    <h2 class="h2 text-success border-bottom pb-3 border-light logo">Zay Shop</h2>
+                <div class="col-3 pt-5">
+                    <h2 class="h2 text-light border-bottom pb-3 border-light">공고</h2>
                     <ul class="list-unstyled text-light footer-link-list">
-                        <li>
-                            <i class="fas fa-map-marker-alt fa-fw"></i>
-                            123 Consectetur at ligula 10660
-                        </li>
-                        <li>
-                            <i class="fa fa-phone fa-fw"></i>
-                            <a class="text-decoration-none" href="tel:010-020-0340">010-020-0340</a>
-                        </li>
-                        <li>
-                            <i class="fa fa-envelope fa-fw"></i>
-                            <a class="text-decoration-none" href="mailto:info@company.com">info@company.com</a>
-                        </li>
+                        <li><a class="text-decoration-none" href="#">공고 조회</a></li>
                     </ul>
                 </div>
 
-                <div class="col-md-4 pt-5">
-                    <h2 class="h2 text-light border-bottom pb-3 border-light">Products</h2>
+                <div class="col-3 pt-5">
+                    <h2 class="h2 text-light border-bottom pb-3 border-light">공지사항</h2>
                     <ul class="list-unstyled text-light footer-link-list">
-                        <li><a class="text-decoration-none" href="#">Luxury</a></li>
-                        <li><a class="text-decoration-none" href="#">Sport Wear</a></li>
-                        <li><a class="text-decoration-none" href="#">Men's Shoes</a></li>
-                        <li><a class="text-decoration-none" href="#">Women's Shoes</a></li>
-                        <li><a class="text-decoration-none" href="#">Popular Dress</a></li>
-                        <li><a class="text-decoration-none" href="#">Gym Accessories</a></li>
-                        <li><a class="text-decoration-none" href="#">Sport Shoes</a></li>
+                        <li><a class="text-decoration-none" href="#">공지사항</a></li>
+                        <li><a class="text-decoration-none" href="#">조력자 안내</a></li>
                     </ul>
                 </div>
 
-                <div class="col-md-4 pt-5">
-                    <h2 class="h2 text-light border-bottom pb-3 border-light">Further Info</h2>
+                <div class="col-3 pt-5">
+                    <h2 class="h2 text-light border-bottom pb-3 border-light">조력자 신청</h2>
                     <ul class="list-unstyled text-light footer-link-list">
-                        <li><a class="text-decoration-none" href="#">Home</a></li>
-                        <li><a class="text-decoration-none" href="#">About Us</a></li>
-                        <li><a class="text-decoration-none" href="#">Shop Locations</a></li>
-                        <li><a class="text-decoration-none" href="#">FAQs</a></li>
-                        <li><a class="text-decoration-none" href="#">Contact</a></li>
+                        <li><a class="text-decoration-none" href="#">조력자 신청하기</a></li>
                     </ul>
                 </div>
+
+                <div class="col-3 pt-5">
+                    <h2 class="h2 text-light border-bottom pb-3 border-light">마이 페이지_회원</h2>
+                    <ul class="list-unstyled text-light footer-link-list">
+                        <li><a class="text-decoration-none" href="#">조력자 신청 현황/선정여부</a></li>
+                        <li><a class="text-decoration-none" href="#">나의 정보</a></li>
+                        <li><a class="text-decoration-none" href="#">MY FAQ</a></li>
+                    </ul>
+                </div>
+
 
             </div>
 
-            <div class="row text-light mb-4">
-                <div class="col-12 mb-3">
-                    <div class="w-100 my-3 border-top border-light"></div>
-                </div>
-                <div class="col-auto me-auto">
-                    <ul class="list-inline text-left footer-icons">
-                        <li class="list-inline-item border border-light rounded-circle text-center">
-                            <a rel="nofollow" class="text-light text-decoration-none" target="_blank" href="http://fb.com/templatemo"><i class="fab fa-facebook-f fa-lg fa-fw"></i></a>
-                        </li>
-                        <li class="list-inline-item border border-light rounded-circle text-center">
-                            <a class="text-light text-decoration-none" target="_blank" href="https://www.instagram.com/"><i class="fab fa-instagram fa-lg fa-fw"></i></a>
-                        </li>
-                        <li class="list-inline-item border border-light rounded-circle text-center">
-                            <a class="text-light text-decoration-none" target="_blank" href="https://twitter.com/"><i class="fab fa-twitter fa-lg fa-fw"></i></a>
-                        </li>
-                        <li class="list-inline-item border border-light rounded-circle text-center">
-                            <a class="text-light text-decoration-none" target="_blank" href="https://www.linkedin.com/"><i class="fab fa-linkedin fa-lg fa-fw"></i></a>
-                        </li>
+        </div>
+    </footer>
+
+
+
+    <!-- Start Footer 관리자 -->
+    <footer class="bg-dark" id="tempaltemo_footer">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-2 pt-5">
+                    <h2 class="h2 text-light border-bottom pb-3 border-light">공고</h2>
+                    <ul class="list-unstyled text-light footer-link-list">
+                        <li><a class="text-decoration-none" href="#">공고 조회</a></li>
                     </ul>
                 </div>
-                <div class="col-auto">
-                    <label class="sr-only" for="subscribeEmail">Email address</label>
-                    <div class="input-group mb-2">
-                        <input type="text" class="form-control bg-dark border-light" id="subscribeEmail" placeholder="Email address">
-                        <div class="input-group-text btn-success text-light">Subscribe</div>
-                    </div>
+
+                <div class="col-2 pt-5">
+                    <h2 class="h2 text-light border-bottom pb-3 border-light">신청자</h2>
+                    <ul class="list-unstyled text-light footer-link-list">
+                        <li><a class="text-decoration-none" href="#">공지사항</a></li>
+                        <li><a class="text-decoration-none" href="#">조력자 안내</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-2 pt-5">
+                    <h2 class="h2 text-light border-bottom pb-3 border-light">현황조회</h2>
+                    <ul class="list-unstyled text-light footer-link-list">
+                        <li><a class="text-decoration-none" href="#">조력자 신청하기</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-2 pt-5">
+                    <h2 class="h2 text-light border-bottom pb-3 border-light">기관정보</h2>
+                    <ul class="list-unstyled text-light footer-link-list">
+                        <li><a class="text-decoration-none" href="#">조력자 신청하기</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-2 pt-5">
+                    <h2 class="h2 text-light border-bottom pb-3 border-light">공지사항</h2>
+                    <ul class="list-unstyled text-light footer-link-list">
+                        <li><a class="text-decoration-none" href="#">조력자 신청하기</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-2 pt-5">
+                    <h2 class="h2 text-light border-bottom pb-3 border-light">마이 페이지_관리자</h2>
+                    <ul class="list-unstyled text-light footer-link-list">
+                        <li><a class="text-decoration-none" href="#">조력자 신청 현황/선정여부</a></li>
+                        <li><a class="text-decoration-none" href="#">나의 정보</a></li>
+                        <li><a class="text-decoration-none" href="#">MY FAQ</a></li>
+                    </ul>
+                </div>
+
+
+            </div>
+
+
+            <div class="w-100 bg-dark py-3 under-footer">
+
+                <div class="footer-box1">
+                    <img class="footer-box1-img" width="100px" src="assets/img/logo.png" alt="Logo Image">
+                </div>
+
+                <div class="text-white footer-box2">
+                    (06590) 서울 특별시 서초구 서초대로 219
+                    <br>
+                    대표전화 02) 3480 - 1100 | 홈페이지 이용 문의 02) 3480 - 1715(평일 9시 ~ 18시) | 인터넷 등기 사용자 지원센터 1544 - 0770
+                    <br>
+                    2조 노권표 문경록 안다솔 이혜원 이유림
                 </div>
             </div>
+
         </div>
 
-        <div class="w-100 bg-black py-3">
-            <div class="container">
-                <div class="row pt-2">
-                    <div class="col-12">
-                        <p class="text-left text-light">
-                            Copyright &copy; 2021 Company Name 
-                            | Designed by <a rel="sponsored" href="https://templatemo.com/page/1" target="_blank">TemplateMo</a>
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
+
 
     </footer>
+
+
+
     <!-- End Footer -->
 
     <!-- Start Script -->
