@@ -2,21 +2,21 @@
 <html lang="en">
 
 <head>
-    <title>Zay Shop - About Page</title>
+    <title>등재신청자 상세정보 조회 기관추천조력자</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="apple-touch-icon" href="assets/img/apple-icon.png">
-    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico">
+    <link rel="apple-touch-icon" href="assetss/img/apple-icon.png">
+    <link rel="shortcut ico n" type="image/x-icon" href="assets/img/favicon.ico">
 
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/templatemo.css">
-    <link rel="stylesheet" href="assets/css/custom.css">
 
     <!-- Load fonts style after rendering the layout styles -->
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;700;900&display=swap">
     <link rel="stylesheet" href="assets/css/fontawesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
     <!--
     
 TemplateMo 559 Zay Shop
@@ -24,16 +24,170 @@ TemplateMo 559 Zay Shop
 https://templatemo.com/tm-559-zay-shop
 
 -->
+
     <style>
+        .notice-regi-title {
+            margin-left: 40%;
+        }
+
+        section {
+            height: 80% !important;
+        }
+
+        .notice-regi-text {
+            height: 70%;
+        }
+
+        form {
+            padding-bottom: 20px;
+        }
+
+        .notice-modi-btn {
+            margin-right: 20px;
+        }
+
         .input-group-text {
-            width: 120px;
+            width: 130px;
             display: flex;
             justify-content: center;
+        }
+
+        .file-btn {
+            font-size: 15px !important;
+            font-weight: 500;
+        }
+
+        .sec-list {
+            padding: 10% !important;
+        }
+
+
+        /* 여기서부터 추가 */
+        .form-total {
+            padding-top: 100px;
+        }
+
+        .side-sec {
+            float: left;
+            width: 10%;
+            margin-left: 0;
+        }
+
+        .total-sec {
+            width: 70%;
+            float: right;
+            margin-right: 100px;
+        }
+
+        .notice-regi-btn {
+            margin-top: 10px;
+            float: right;
+            padding-bottom: 100px;
+        }
+
+        /*
+    왼쪽 사이드 카테고리
+*/
+
+        .col-lg-3 {
+            margin-top: 150px;
+            margin-left: 100px;
+            width: 360px;
+        }
+
+        .pb-3 a {
+            font-weight: bold;
+            padding-bottom: 15px;
+        }
+
+        .pb-3 a:hover {
+            color: #5a95f5;
+        }
+
+        /*-----------------------------------------------------------------*/
+
+        /*
+    사이드 버튼 이벤트 효과
+*/
+
+        .action-btn {
+            padding: 15px 100px;
+            margin: 10px 4px;
+            font-family: sans-serif;
+            text-transform: uppercase;
+            text-align: center;
+            position: relative;
+            text-decoration: none;
+            display: inline-block;
+
+        }
+
+        .action-btn::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            display: block;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            transform: scaleX(.3);
+            opacity: 0;
+            transition: all .3s
+        }
+
+        .action-btn:hover::before {
+            opacity: 1;
+            background-color: #212934;
+            -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+            transition: -webkit-transform .6s cubic-bezier(.08, .35, .13, 1.02), opacity .4s;
+            transition: transform .6s cubic-bezier(.08, .35, .13, 1.02), opacity;
+        }
+
+        .pb-3 a:hover {
+            color: white;
+        }
+
+        /*-----------------------------------------------------------------*/
+
+
+        /* title style */
+        .announcement-detail-title {
+            width: 100%;
+            margin-bottom: 80px;
+        }
+
+        .announcement-detail-title h3 {
+            text-align: center;
+            margin: 0 auto;
+            border-top: 2px solid #888888;
+            border-bottom: 2px solid #888888;
+            padding: 15px;
+            color: #808080;
+            width: 25%;
+            font-size: 20px;
+        }
+
+        /* 푸터 */
+        .under-footer {
+            height: 150px;
+        }
+
+        .footer-box2 {
+            padding: 20px 0px;
+            position: relative;
+            left: 160px;
+            bottom: 115px;
+            font-size: 17px !important;
+            font-weight: 100 !important;
+            line-height: 30px;
         }
     </style>
 </head>
 
-<body>
+<body class="clearfix">
+    <!-- 추가 -->
     <!-- Start Top Nav -->
     <nav class="navbar navbar-expand-lg bg-dark navbar-light d-none d-lg-block" id="templatemo_nav_top">
         <div class="container text-light">
@@ -129,234 +283,284 @@ https://templatemo.com/tm-559-zay-shop
         </div>
     </nav>
 
-    <!-- Modal -->
-    <div class="modal fade bg-white" id="templatemo_search" tabindex="-1" role="dialog"
-        aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <!-- Close Header -->
 
-    </div>
+    <!-- side바 추가 -->
+    <div class="total clearfix">
+        <!-- form을 감싸고 있음-->
+        <div class="container side-sec">
+            <div class="row">
+
+                <div class="col-lg-3">
+                    <h1 class="h2 pb-4">MY PAGE</h1>
+
+
+
+                    <ul class="list-unstyled templatemo-accordion">
+                        <li class="pb-3">
+                            <a class="collapsed d-flex justify-content-between h3 text-decoration-none"
+                                href="mypage_ins.html">
+                                MY INFO
+                            </a>
+                        </li>
+                        <li class="pb-3">
+                            <a class="collapsed d-flex justify-content-between h3 text-decoration-none myInfo" href="#">
+                                조력자 신청/선정 현황
+                            </a>
+                        </li>
+                        <li class="pb-3">
+                            <a class="collapsed d-flex justify-content-between h3 text-decoration-none" href="#">
+                                MY FAQ
+                            </a>
+                        </li>
+                        <li class="pb-3">
+                            <a class="collapsed d-flex justify-content-between h3 text-decoration-none"
+                                href="index.html">
+                                로그아웃
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
 
 
 
 
-    <div>
-        <form style="width: 100%; display: flex;">
-            <div class="total clearfix">
-                <!-- form을 감싸고 있음-->
-                <div class="container side-sec">
-                    <div class="row">
 
-                        <div class="col-lg-3">
-                            <h1 class="h2 pb-4">MY PAGE</h1>
-                            <ul class="list-unstyled templatemo-accordion">
-                                <li class="pb-3">
-                                    <a class="collapsed d-flex justify-content-between h3 text-decoration-none"
-                                        href="mypage_ins.html">
-                                        MY INFO
-                                    </a>
-                                </li>
-                                <li class="pb-3">
-                                    <a class="collapsed d-flex justify-content-between h3 text-decoration-none myInfo"
-                                        href="#">
-                                        조력자 신청/선정 현황
-                                    </a>
-                                </li>
-                                <li class="pb-3">
-                                    <a class="collapsed d-flex justify-content-between h3 text-decoration-none"
-                                        href="#">
-                                        MY FAQ
-                                    </a>
-                                </li>
-                                <li class="pb-3">
-                                    <a class="collapsed d-flex justify-content-between h3 text-decoration-none"
-                                        href="index.html">
-                                        로그아웃
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
+
+
+        <!-- Start Categories of The Month -->
+        <form class="form-total">
+            <section class="py-3 total-sec">
+
+                <div class="table-box col-lg second-section">
+
+                    <!-- 타이틀 추가 -->
+                    <div class="announcement-detail-title">
+                        <h3>공고 상세조회</h3>
                     </div>
-                </div>
-                <!-- Modal -->
-                <div class="modal fade bg-white" id="templatemo_search" tabindex="-1" role="dialog"
-                    aria-labelledby="exampleModalLabel" aria-hidden="true">
+
+
+
+                    <div>
+                        <div>
+                            <div>
+                                <div class="input-group mb-3">
+
+                                    <span class="input-group-text">제목</span>
+                                    <input type="text" class="form-control"
+                                        aria-label="Text input with segmented dropdown button">
+
+                                </div>
+
+                                <div class="input-group mb-3">
+
+                                    <span class="input-group-text">작성자</span>
+                                    <input type="text" class="form-control"
+                                        aria-label="Text input with segmented dropdown button">
+
+                                </div>
+
+                                <div class="input-group mb-3">
+
+                                    <span class="input-group-text">년도</span>
+                                    <input type="text" class="form-control"
+                                        aria-label="Text input with segmented dropdown button">
+
+                                    <span class="input-group-text">공고 차수</span>
+                                    <input type="text" class="form-control"
+                                        aria-label="Text input with segmented dropdown button">
+
+                                    <span class="input-group-text">조력자 구분</span>
+                                    <input type="text" class="form-control"
+                                        aria-label="Text input with segmented dropdown button">
+
+                                </div>
+
+                                <div class="input-group mb-3">
+
+                                    <span class="input-group-text">공고상태</span>
+                                    <input type="text" class="form-control"
+                                        aria-label="Text input with segmented dropdown button">
+
+                                    <span class="input-group-text">공고기간</span>
+                                    <input type="text" class="form-control"
+                                        aria-label="Text input with segmented dropdown button">
+
+
+                                </div>
+
+                                <div class="input-group mb-3">
+
+                                    <span class="input-group-text">작성일</span>
+                                    <input type="text" class="form-control"
+                                        aria-label="Text input with segmented dropdown button">
+
+                                    <span class="input-group-text">조회</span>
+                                    <input type="text" class="form-control"
+                                        aria-label="Text input with segmented dropdown button">
+
+                                </div>
+
+                                <textarea
+                                    style="border-radius: 5px; border: 1px solid #d6d6d6; resize: none; width: 100%; height: 400px;">
+
+                        </textarea>
+
+                            </div>
+
+                        </div>
+
+                        <!-- faq를 작성한 사용자만(아이디로 비교) 수정버튼 활성화 -->
+                        <div class="notice-regi-btn">
+                            <button class="btn btn-outline-secondary" type="file" id="inputGroupFileAddon04">수정</button>
+
+                            <button class="btn btn-outline-secondary" type="button"
+                                id="inputGroupFileAddon04">삭제</button>
+                        </div>
+
+                    </div>
 
                 </div>
-            </div>
-            <div class="announcement-detail-view">
-                <!--start first-line-->
-                <div class="announcement-detail-title">
-                    <h3>공고 상세보기</h3>
-                </div>
-                <div class="input-group mb-3">
 
-                    <span class="input-group-text">제목</span>
-                    <input type="text" class="form-control" aria-label="Text input with segmented dropdown button">
 
-                </div>
-                <!--end first-line-->
-                <!--start second-line-->
-                <div class="input-group mb-3">
 
-                    <span class="input-group-text">작성자</span>
-                    <input type="text" class="form-control" aria-label="Text input with segmented dropdown button">
 
-                </div>
-                <!--end second-line-->
-                <!--start third-line-->
-                <div class="input-group mb-3">
 
-                    <span class="input-group-text">년도</span>
-                    <input type="text" class="form-control" aria-label="Text input with segmented dropdown button">
 
-                    <span class="input-group-text">공고차수</span>
-                    <input type="text" class="form-control" aria-label="Text input with segmented dropdown button">
-
-                    <span class="input-group-text ">조력자 구분</span>
-                    <input type="text" class="form-control" aria-label="Text input with segmented dropdown button">
-
-                </div>
-                <!--end third-line-->
-                <!--start second-line-->
-                <div class="input-group mb-3">
-                    <span class="input-group-text">공고상태</span>
-                    <input type="text" class="form-control" aria-label="Text input with segmented dropdown button">
-                    <span class="input-group-text">공고기간</span>
-                    <input type="text" class="form-control" aria-label="Text input with segmented dropdown button">
-                </div>
-                <!--end second-line-->
-                <!--start second-line-->
-                <div class="input-group mb-3">
-                    <span class="input-group-text">작성일</span>
-                    <input type="text" class="form-control" aria-label="Text input with segmented dropdown button">
-                    <span class="input-group-text">조회</span>
-                    <input type="text" class="form-control" aria-label="Text input with segmented dropdown button">
-                </div>
-                <div class="input-group mb-3" style="width: 50%;">
-                    <input type="file" class="form-control" aria-label="Text input with segmented dropdown button"
-                        style="border: 1px solid #e7e7e7;">
-                </div>
-
-                <!--end second-line-->
-                <div class="announcement-detail-content">
-                    <p>독자가 페이지의 레이아웃을 볼 때 읽을 수 있는 콘텐츠에 주의를 산만하게 한다는 것은 오래 전부터 확립된 사실입니다.
-                        Lorem Ipsum을 사용하는 요점은 '여기에 내용, 여기에 내용'을 사용하는 것과는 대조적으로 글자의 다소 정규 분포가 있어 읽을 수 있는 영어처럼 보이게 한다는
-                        것입니다.
-                        많은 데스크탑 출판 패키지와 웹 페이지 편집자는 이제 Lorem Ipsum을 기본 모델 텍스트로 사용하며 'lorem ipsum'을 검색하면 아직 초기 단계에 있는 많은 웹
-                        사이트를 찾을 수 있습니다.
-                        다양한 버전이 수년에 걸쳐, 때로는 우연히, 때로는 의도적으로(삽입된 유머 등) 진화했습니다.
-                    </p>
-                </div>
-                <div class="detail-btns" style="margin-bottom: 50px;">
-                    <button class="btn-outline-secondary"
-                        style="margin-bottom: 10px; border-radius: 5px; border: 1px solid #d6d6d6;">수정</button>
-                    <button class="btn-outline-secondary"
-                        style="margin-bottom: 10px; border-radius: 5px; border: 1px solid #d6d6d6;">삭제</button>
-                </div>
-
-            </div>
+            </section>
         </form>
-    </div>
-    <!-- End Section -->
 
-    <!-- Start Footer -->
+    </div>
+    <!-- End Categories of The Month -->
+
+
+    <!-- Start Featured Product -->
+
+
+
+    <!-- Start Footer 회원 -->
     <footer class="bg-dark" id="tempaltemo_footer">
         <div class="container">
             <div class="row">
 
-                <div class="col-md-4 pt-5">
-                    <h2 class="h2 text-success border-bottom pb-3 border-light logo">Zay Shop</h2>
+                <div class="col-3 pt-5">
+                    <h2 class="h2 text-light border-bottom pb-3 border-light">공고</h2>
                     <ul class="list-unstyled text-light footer-link-list">
-                        <li>
-                            <i class="fas fa-map-marker-alt fa-fw"></i>
-                            123 Consectetur at ligula 10660
-                        </li>
-                        <li>
-                            <i class="fa fa-phone fa-fw"></i>
-                            <a class="text-decoration-none" href="tel:010-020-0340">010-020-0340</a>
-                        </li>
-                        <li>
-                            <i class="fa fa-envelope fa-fw"></i>
-                            <a class="text-decoration-none" href="mailto:info@company.com">info@company.com</a>
-                        </li>
+                        <li><a class="text-decoration-none" href="#">공고 조회</a></li>
                     </ul>
                 </div>
 
-                <div class="col-md-4 pt-5">
-                    <h2 class="h2 text-light border-bottom pb-3 border-light">Products</h2>
+                <div class="col-3 pt-5">
+                    <h2 class="h2 text-light border-bottom pb-3 border-light">공지사항</h2>
                     <ul class="list-unstyled text-light footer-link-list">
-                        <li><a class="text-decoration-none" href="#">Luxury</a></li>
-                        <li><a class="text-decoration-none" href="#">Sport Wear</a></li>
-                        <li><a class="text-decoration-none" href="#">Men's Shoes</a></li>
-                        <li><a class="text-decoration-none" href="#">Women's Shoes</a></li>
-                        <li><a class="text-decoration-none" href="#">Popular Dress</a></li>
-                        <li><a class="text-decoration-none" href="#">Gym Accessories</a></li>
-                        <li><a class="text-decoration-none" href="#">Sport Shoes</a></li>
+                        <li><a class="text-decoration-none" href="#">공지사항</a></li>
+                        <li><a class="text-decoration-none" href="#">조력자 안내</a></li>
                     </ul>
                 </div>
 
-                <div class="col-md-4 pt-5">
-                    <h2 class="h2 text-light border-bottom pb-3 border-light">Further Info</h2>
+                <div class="col-3 pt-5">
+                    <h2 class="h2 text-light border-bottom pb-3 border-light">조력자 신청</h2>
                     <ul class="list-unstyled text-light footer-link-list">
-                        <li><a class="text-decoration-none" href="#">Home</a></li>
-                        <li><a class="text-decoration-none" href="#">About Us</a></li>
-                        <li><a class="text-decoration-none" href="#">Shop Locations</a></li>
-                        <li><a class="text-decoration-none" href="#">FAQs</a></li>
-                        <li><a class="text-decoration-none" href="#">Contact</a></li>
+                        <li><a class="text-decoration-none" href="#">조력자 신청하기</a></li>
                     </ul>
                 </div>
+
+                <div class="col-3 pt-5">
+                    <h2 class="h2 text-light border-bottom pb-3 border-light">마이 페이지_회원</h2>
+                    <ul class="list-unstyled text-light footer-link-list">
+                        <li><a class="text-decoration-none" href="#">조력자 신청 현황/선정여부</a></li>
+                        <li><a class="text-decoration-none" href="#">나의 정보</a></li>
+                        <li><a class="text-decoration-none" href="#">MY FAQ</a></li>
+                    </ul>
+                </div>
+
 
             </div>
 
-            <div class="row text-light mb-4">
-                <div class="col-12 mb-3">
-                    <div class="w-100 my-3 border-top border-light"></div>
-                </div>
-                <div class="col-auto me-auto">
-                    <ul class="list-inline text-left footer-icons">
-                        <li class="list-inline-item border border-light rounded-circle text-center">
-                            <a rel="nofollow" class="text-light text-decoration-none" target="_blank"
-                                href="http://fb.com/templatemo"><i class="fab fa-facebook-f fa-lg fa-fw"></i></a>
-                        </li>
-                        <li class="list-inline-item border border-light rounded-circle text-center">
-                            <a class="text-light text-decoration-none" target="_blank"
-                                href="https://www.instagram.com/"><i class="fab fa-instagram fa-lg fa-fw"></i></a>
-                        </li>
-                        <li class="list-inline-item border border-light rounded-circle text-center">
-                            <a class="text-light text-decoration-none" target="_blank" href="https://twitter.com/"><i
-                                    class="fab fa-twitter fa-lg fa-fw"></i></a>
-                        </li>
-                        <li class="list-inline-item border border-light rounded-circle text-center">
-                            <a class="text-light text-decoration-none" target="_blank"
-                                href="https://www.linkedin.com/"><i class="fab fa-linkedin fa-lg fa-fw"></i></a>
-                        </li>
+        </div>
+    </footer>
+
+
+
+    <!-- Start Footer 관리자 -->
+    <footer class="bg-dark" id="tempaltemo_footer">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-2 pt-5">
+                    <h2 class="h2 text-light border-bottom pb-3 border-light">공고</h2>
+                    <ul class="list-unstyled text-light footer-link-list">
+                        <li><a class="text-decoration-none" href="#">공고 조회</a></li>
                     </ul>
                 </div>
-                <div class="col-auto">
-                    <label class="sr-only" for="subscribeEmail">Email address</label>
-                    <div class="input-group mb-2">
-                        <input type="text" class="form-control bg-dark border-light" id="subscribeEmail"
-                            placeholder="Email address">
-                        <div class="input-group-text btn-success text-light">Subscribe</div>
-                    </div>
+
+                <div class="col-2 pt-5">
+                    <h2 class="h2 text-light border-bottom pb-3 border-light">신청자</h2>
+                    <ul class="list-unstyled text-light footer-link-list">
+                        <li><a class="text-decoration-none" href="#">공지사항</a></li>
+                        <li><a class="text-decoration-none" href="#">조력자 안내</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-2 pt-5">
+                    <h2 class="h2 text-light border-bottom pb-3 border-light">현황조회</h2>
+                    <ul class="list-unstyled text-light footer-link-list">
+                        <li><a class="text-decoration-none" href="#">조력자 신청하기</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-2 pt-5">
+                    <h2 class="h2 text-light border-bottom pb-3 border-light">기관정보</h2>
+                    <ul class="list-unstyled text-light footer-link-list">
+                        <li><a class="text-decoration-none" href="#">조력자 신청하기</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-2 pt-5">
+                    <h2 class="h2 text-light border-bottom pb-3 border-light">공지사항</h2>
+                    <ul class="list-unstyled text-light footer-link-list">
+                        <li><a class="text-decoration-none" href="#">조력자 신청하기</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-2 pt-5">
+                    <h2 class="h2 text-light border-bottom pb-3 border-light">마이 페이지_관리자</h2>
+                    <ul class="list-unstyled text-light footer-link-list">
+                        <li><a class="text-decoration-none" href="#">조력자 신청 현황/선정여부</a></li>
+                        <li><a class="text-decoration-none" href="#">나의 정보</a></li>
+                        <li><a class="text-decoration-none" href="#">MY FAQ</a></li>
+                    </ul>
+                </div>
+
+
+            </div>
+
+
+            <div class="w-100 bg-dark py-3 under-footer">
+
+                <div class="footer-box1">
+                    <img class="footer-box1-img" width="100px" src="assets/img/logo.png" alt="Logo Image">
+                </div>
+
+                <div class="text-white footer-box2">
+                    (06590) 서울 특별시 서초구 서초대로 219
+                    <br>
+                    대표전화 02) 3480 - 1100 | 홈페이지 이용 문의 02) 3480 - 1715(평일 9시 ~ 18시) | 인터넷 등기 사용자 지원센터 1544 - 0770
+                    <br>
+                    2조 노권표 문경록 안다솔 이혜원 이유림
                 </div>
             </div>
+
         </div>
 
-        <div class="w-100 bg-black py-3">
-            <div class="container">
-                <div class="row pt-2">
-                    <div class="col-12">
-                        <p class="text-left text-light">
-                            Copyright &copy; 2021 Company Name
-                            | Designed by <a rel="sponsored" href="https://templatemo.com/page/1"
-                                target="_blank">TemplateMo</a>
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
+
 
     </footer>
+
+
+
     <!-- End Footer -->
 
     <!-- Start Script -->
