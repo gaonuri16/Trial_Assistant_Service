@@ -25,7 +25,20 @@
     -->
     
     <style>
-    
+    /* 푸터 */
+    .under-footer {
+        height: 150px;
+    }
+
+    .footer-box2 {
+        padding: 20px 0px;
+        position: relative;
+        left: 160px;
+        bottom: 115px;
+        font-size: 17px !important;
+        font-weight: 100 !important;
+        line-height: 30px;
+    }
     
     
     .title-box{
@@ -42,7 +55,6 @@
     }
 
     .form-total-box{
-        border: 1px solid red;
         max-width: 800px;
         min-width: 400px;
     }
@@ -51,48 +63,35 @@
     button:hover{
         cursor: pointer;
     }
-    /* .btn-box{
+    .btn-box{
         margin-top: 50px;
         width: 100%;
-        text-align: center;
-    } */
-    .btn-box{
-        max-width: 800px;
         min-width: 400px;
-        margin: 50px 37% 0;    
+        text-align: center;    
     }
-    .btn-box::after{
+    /* .btn-box::after{
         display: block;
         content: '';
         clear: both;
-    }
-/*     
+    } */
+
     .modif-btn{
         margin: 0 50px;
         box-sizing: border-box;
         display: inline-block;
-    } */
-    .modif-btn{
-        float:left;
-        margin-right: 5%;
-        box-sizing: border-box;
-        text-align: center;
     }
-    /* .cencel-btn{
-        margin: 0 50px;
-        box-sizing: border-box;
-        display: inline-block;
-    } */
+   
     .cencel-btn{
-        float:left;
+        margin: 0 50px;
         box-sizing: border-box;
-        text-align: center;
+        display: inline-block;
     }
+    
     
     .total-box{
         border: 1px solid rgb(189, 186, 186);
         border-radius: 20px;
-        width: 80%;
+        min-width: 80%;
         margin: 0 auto;
         padding: 20px 0;
     }
@@ -101,7 +100,7 @@
         border-radius: 20px;
         background-color: #EFEFEF;
         color: #676767;
-        width: 25%;
+        min-width: 25%;
         height: 40px;
         line-height: 40px;
         margin-left: 10%;
@@ -111,7 +110,7 @@
     }
     .box2{
         color: #676767;
-        width: 75%;
+        min-width: 75%;
         height: 40px;
         line-height: 40px;
         margin: 0 5%;

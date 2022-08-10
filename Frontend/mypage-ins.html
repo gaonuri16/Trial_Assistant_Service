@@ -65,6 +65,7 @@
     .btn-box{
         margin-top: 50px;
         width: 100%;
+        min-width: 400px;
         text-align: center;
     }
     
@@ -82,7 +83,7 @@
     .total-box{
         border: 1px solid rgb(189, 186, 186);
         border-radius: 20px;
-        width: 80%;
+        min-width: 80%;
         margin: 0 auto;
         padding: 20px 0;
     }
@@ -91,17 +92,19 @@
         border-radius: 20px;
         background-color: #EFEFEF;
         color: #676767;
-        width: 25%;
+        min-width: 30%;
         height: 40px;
         line-height: 40px;
         margin-left: 10%;
         margin-right: 10%;
+        padding: 0 5%;
         float: left;
         text-align: center;
+        white-space: nowrap;
     }
     .box2{
         color: #676767;
-        width: 75%;
+        min-width: 70%;
         height: 40px;
         line-height: 40px;
         margin-left: 5%;
@@ -290,10 +293,10 @@
                 
                     <div class="btn-box">
                         <div class="col mt-2 modif-btn">
-                            <button type="button" onclick="location.href='mypage_ins_modif.html'" class="btn btn-secondary px-3">정보수정</button>
+                            <button type="button" onclick="location.href='mypage_ins_modif.html'" class="btn btn-outline-secondary px-3">정보수정</button>
                         </div>
                         <div class="col mt-2 cencel-btn">
-                            <button type="submit" onclick="location.href='index.html'" class="btn btn-secondary px-3">취소</button>
+                            <button type="submit" onclick="location.href='index.html'" class="btn btn-outline-secondary px-3">취소</button>
                         </div>
                     </div>
                 </form>

@@ -96,6 +96,12 @@
         box-sizing: border-box;
         text-align: center;
     }
+    /*btn-outline-secondary 적용시 왼쪽 짤림 보완 스타일 */
+    .btn-add-style{
+    border-left: 2px solid gray;
+    background-color: white;
+    
+    }
 
 
 
@@ -103,7 +109,8 @@
     .total-box{
         border: 1px solid rgb(189, 186, 186);
         border-radius: 20px;
-        width: 80%;
+        max-width: 800px;
+        min-width: 500px;
         margin: 0 auto;
         padding: 20px 0;
     }
@@ -294,7 +301,7 @@
                             <label class="box1" for="inputJoinAddrBasic">기본주소</label>
                             <div class="box2 input-group joinAddrBasic">
                                 <input type="text" class="form-control" id="subject" name="subject">
-                                <button class="input-group-text btn-secondary ">주소 찾기</button>
+                                <button class="input-group-text btn-add-style btn-outline-secondary ">주소 찾기</button>
                             </div>
                         </div>
                         <div class="boxbox">
