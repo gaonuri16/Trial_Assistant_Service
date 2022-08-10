@@ -365,126 +365,145 @@ https://templatemo.com/tm-559-zay-shop
         <div class="table-box col-lg second-section ">
           <div class="more-view" id="notice_title">
             <!-- 타이틀 추가 -->
-            <div style="display: flex; justify-content: center;">
-              <h3 class="notice-title"
-                style="width: 150px; padding-left: 50px; padding-bottom: 15px; border-bottom:1px solid #d6d6d6; color: #6b6b6b;">
-                공고</h3>
+            <div class="announcement-detail-title" style="width: 400px; margin: 40px auto;">
+              <h3>공고</h3>
             </div>
-            <div class="announcement-search dropup" style="float: right; margin-bottom: 10px;">
-              <button type="button" id="title-btn" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown"
-                aria-expanded="false">
-                제목
-              </button>
-              <ul class="dropdown-menu">
-                <li>작성자</li>
-                <li>내용</li>
-                <li>제목</li>
-              </ul>
-              <input type="text" placeholder="검색할 제목을 입력하세요..." />
-              <button id="announcement-search-btn">검색</button>
-            </div>
+          </div>
 
-            <!--번호 년도 차수 제목 공고기간 조력자구분 조회수-->
-            <table class="table table-striped">
-              <thead>
-                <th scope="col">번호</th>
-                <th scope="col">년도</th>
-                <th scope="col">차수</th>
-                <th scope="col">제목</th>
-                <th scope="col">공고기간</th>
-                <th scope="col">조력자구분</th>
-                <th scope="col">조회수</th>
-              </thead>
+          <div class="announcement-search dropdown" style="width: 500px; display: flex; justify-content: flex-end;">
+            <button type="button" id="title-btn" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              일반조력자
+            </button>
 
-              <tbody style="width: 100%;">
-                <tr>
-                  <td>145</td>
-                  <td>2022</td>
-                  <td>2차</td>
-                  <td>여기는 공고 목록의 제목영역입니다.</td>
-                  <!-- Javascript를 사용해서 날짜 입력받거나  -->
-                  <td>2022/08/03 ~ 2022/08/28</td>
-                  <td>기관추천조력자</td>
-                  <td id="notice_hit">34</td>
-                </tr>
-                <tr>
-                  <td>145</td>
-                  <td>2022</td>
-                  <td>2차</td>
-                  <td>여기는 공고 목록의 제목영역입니다.</td>
-                  <!-- Javascript를 사용해서 날짜 입력받거나  -->
-                  <td>2022/08/03 ~ 2022/08/28</td>
-                  <td>기관추천조력자</td>
-                  <td id="notice_hit">34</td>
-                </tr>
-                <tr>
-                  <td>145</td>
-                  <td>2022</td>
-                  <td>2차</td>
-                  <td>여기는 공고 목록의 제목영역입니다.</td>
-                  <!-- Javascript를 사용해서 날짜 입력받거나  -->
-                  <td>2022/08/03 ~ 2022/08/28</td>
-                  <td>기관추천조력자</td>
-                  <td id="notice_hit">34</td>
-                </tr>
-                <tr>
-                  <td>145</td>
-                  <td>2022</td>
-                  <td>2차</td>
-                  <td>여기는 공고 목록의 제목영역입니다.</td>
-                  <!-- Javascript를 사용해서 날짜 입력받거나  -->
-                  <td>2022/08/03 ~ 2022/08/28</td>
-                  <td>기관추천조력자</td>
-                  <td id="notice_hit">34</td>
-                </tr>
-                <tr>
-                  <td>145</td>
-                  <td>2022</td>
-                  <td>2차</td>
-                  <td>여기는 공고 목록의 제목영역입니다.</td>
-                  <!-- Javascript를 사용해서 날짜 입력받거나  -->
-                  <td>2022/08/03 ~ 2022/08/28</td>
-                  <td>기관추천조력자</td>
-                  <td id="notice_hit">34</td>
-                </tr>
-                <tr>
-                  <td>145</td>
-                  <td>2022</td>
-                  <td>2차</td>
-                  <td>여기는 공고 목록의 제목영역입니다.</td>
-                  <!-- Javascript를 사용해서 날짜 입력받거나  -->
-                  <td>2022/08/03 ~ 2022/08/28</td>
-                  <td>기관추천조력자</td>
-                  <td id="notice_hit">34</td>
-                </tr>
-                <tr>
-                  <td>145</td>
-                  <td>2022</td>
-                  <td>2차</td>
-                  <td>여기는 공고 목록의 제목영역입니다.</td>
-                  <!-- Javascript를 사용해서 날짜 입력받거나  -->
-                  <td>2022/08/03 ~ 2022/08/28</td>
-                  <td>기관추천조력자</td>
-                  <td id="notice_hit">34</td>
-                </tr>
-              </tbody>
-            </table>
+            <ul class="dropdown-menu">
+              <li>기관추천조력자</li>
+              <li>통번역인</li>
+              <li>일반조력자</li>
+            </ul>
+            <input type="text" class="announcement-search-input" placeholder="검색할 제목을 입력하세요." />
+            <button id="announcement-search-btn">검색</button>
+          </div>
 
-            <div class="andBtns">
-              <div class="paging-btns">
-                <button type="button" class="btn btn-outline-secondary">◀</button>
-                <button type="button" class="btn btn-outline-secondary">1</button>
-                <button type="button" class="btn btn-outline-secondary">2</button>
-                <button type="button" class="btn btn-outline-secondary">3</button>
-                <button type="button" class="btn btn-outline-secondary">4</button>
-                <button type="button" class="btn btn-outline-secondary">▶</button>
-              </div>
+          <!-- 조력자별 구분이면 버튼을 따로 만드는것보다 검색으로 하는게 더 좋을 것 같은데 
+             논의 필요  -->
 
+          <!-- <div class="notice-regi-btn">
+          <button class="btn btn-outline-secondary" type="button" id="inputGroupFileAddon04"></button>
+          <button class="btn btn-outline-secondary" type="button" id="inputGroupFileAddon04">수정</button>
+          <button class="btn btn-outline-secondary" type="button" id="inputGroupFileAddon04">수정</button>
 
-              <button class="btn-outline-secondary" style="border-radius: 5px; border: 1px solid #d6d6d6;"
+          <button
+          type="button"
+          id="title-btn"
+          class="btn btn-secondary dropdown-toggle"
+          data-bs-toggle="dropdown"
+          aria-expanded="false">
+          제목
+        </button>
+        
+        <ul class="dropdown-menu">
+          <li>작성자</li>
+          <li>내용</li>
+          <li>제목</li>
+        </ul>
+        <input type="text" placeholder="검색할 제목을 입력하세요..." />
+        <button id="announcement-search-btn">검색</button>
+      </div> -->
+        </div>
+
+        <table class="announcement-table table table-hover">
+          <thead style="background-color: #e9ecef; border-top:3px solid">
+            <th scope="col">번호</th>
+            <th scope="col">년도</th>
+            <th scope="col">차수</th>
+            <th scope="col">제목</th>
+            <th scope="col">공고기간</th>
+            <th scope="col">조력자구분</th>
+            <th scope="col">조회수</th>
+          </thead>
+
+          <tbody>
+            <tr style="border-top : 3px solid #e9ecef">
+              <td>145</td>
+              <td>2022</td>
+              <td>2차</td>
+              <td>여기는 공고 목록의 제목영역입니다.</td>
+              <!-- Javascript를 사용해서 날짜 입력받거나  -->
+              <td>2022/08/03 ~ 2022/08/28</td>
+              <td>기관추천조력자</td>
+              <td id="notice_hit">34</td>
+            </tr>
+            <tr style="border-top : 3px solid #e9ecef">
+              <td>145</td>
+              <td>2022</td>
+              <td>2차</td>
+              <td>여기는 공고 목록의 제목영역입니다.</td>
+              <!-- Javascript를 사용해서 날짜 입력받거나  -->
+              <td>2022/08/03 ~ 2022/08/28</td>
+              <td>기관추천조력자</td>
+              <td id="notice_hit">34</td>
+            </tr>
+            <tr style="border-top : 3px solid #e9ecef">
+              <td>145</td>
+              <td>2022</td>
+              <td>2차</td>
+              <td>여기는 공고 목록의 제목영역입니다.</td>
+              <!-- Javascript를 사용해서 날짜 입력받거나  -->
+              <td>2022/08/03 ~ 2022/08/28</td>
+              <td>기관추천조력자</td>
+              <td id="notice_hit">34</td>
+            </tr>
+            <tr style="border-top : 3px solid #e9ecef">
+              <td>145</td>
+              <td>2022</td>
+              <td>2차</td>
+              <td>여기는 공고 목록의 제목영역입니다.</td>
+              <!-- Javascript를 사용해서 날짜 입력받거나  -->
+              <td>2022/08/03 ~ 2022/08/28</td>
+              <td>기관추천조력자</td>
+              <td id="notice_hit">34</td>
+            </tr>
+            <tr style="border-top : 3px solid #e9ecef">
+              <td>145</td>
+              <td>2022</td>
+              <td>2차</td>
+              <td>여기는 공고 목록의 제목영역입니다.</td>
+              <!-- Javascript를 사용해서 날짜 입력받거나  -->
+              <td>2022/08/03 ~ 2022/08/28</td>
+              <td>기관추천조력자</td>
+              <td id="notice_hit">34</td>
+            </tr>
+            <tr style="border-top : 3px solid #e9ecef">
+              <td>145</td>
+              <td>2022</td>
+              <td>2차</td>
+              <td>여기는 공고 목록의 제목영역입니다.</td>
+              <!-- Javascript를 사용해서 날짜 입력받거나  -->
+              <td>2022/08/03 ~ 2022/08/28</td>
+              <td>기관추천조력자</td>
+              <td id="notice_hit">34</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <div class="andBtns">
+          <div class="paging-btns">
+            <button type="button" class="btn btn-outline-secondary">◀</button>
+            <button type="button" class="btn btn-outline-secondary">1</button>
+            <button type="button" class="btn btn-outline-secondary">2</button>
+            <button type="button" class="btn btn-outline-secondary">3</button>
+            <button type="button" class="btn btn-outline-secondary">4</button>
+            <button type="button" class="btn btn-outline-secondary">▶</button>
+          </div>
+          <button class="btn-outline-secondary" style="border-radius: 5px; border: 1px solid #d6d6d6;"
                 id="announcement-upload">등록</button>
             </div>
 
+
+          <!-- 파일로 출력이 무슨 뜻이지? 
+               물어보기 -->
+        </div>
 
 
 
