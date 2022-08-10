@@ -26,28 +26,29 @@ https://templatemo.com/tm-559-zay-shop
 -->
 </head>
 
-<style>
-    #hp-iden {
-        display: flex;
-        justify-content: center;
+    <style>
+
+    /* 푸터 */
+    .under-footer {
+        height: 150px;
     }
 
-    .announcement-detail-title{
-        width: 100%;
-        margin-bottom: 80px;
+    .footer-box2 {
+        padding: 20px 0px;
+        position: relative;
+        left: 160px;
+        bottom: 115px;
+        font-size: 17px !important;
+        font-weight: 100 !important;
+        line-height: 30px;
     }
-    .announcement-detail-title h3{
+
+    .titlefoot {
         text-align: center;
-        margin: 0 auto;
-        border-top:2px solid #888888 ;
-        border-bottom:2px solid #888888 ;
-        padding: 15px;
-        color: #808080;
-        width: 25%;
-        font-size: 20px;
+        margin: 70px auto;
     }
 
-</style>
+    </style>
 
 <body>
     <!-- Start Top Nav -->
@@ -165,11 +166,12 @@ https://templatemo.com/tm-559-zay-shop
                     <div>
                         <h1>본인인증</h1><hr width="1250">
                     </div>
+                </section>
             </div>
 
                     <br>
                     
-                    <form class="col-md-9 m-auto" method="post" role="form" id="ge-info">
+                    <form class="col-md-5 m-auto" method="post" role="form">
                         <div class="mb-3">
                             <label for="inputJoinId">이름</label>
                             <div class="input-group mb-3">
@@ -178,9 +180,9 @@ https://templatemo.com/tm-559-zay-shop
                         </div>
 
                         <div class="form-group">
-                            <label for="inputJoinId">이메일</label>
+                            <label for="inputemail">이메일</label>
                             <div class="input-group">
-                                <input type="text" class="form-control" id="joinId" name="joinId">
+                                <input type="text" class="form-control" id="inputemail" name="inputemail">
                                 <button class="btn btn-success">인증하기</button>
                             </div>
                         </div>
@@ -203,24 +205,15 @@ https://templatemo.com/tm-559-zay-shop
         <div class="container my-4">
             <div class="row text-center py-3">
                 <div class="col-lg-6 m-auto">
-                    <h1 class="h1"></h1>
-                    <p>
-                        
-                    </p>
-                </div>
-                <div class="col-lg-9 m-auto tempaltemo-carousel">
-                    <div class="row d-flex flex-row">
 
-                        <div class="row">
-                            <div class="col mt-2 join-btn">
-                                <button type="submit" class="btn btn-secondary btn-lg px-3">이전</button>
-                            </div>
-                            <div class="col mt-2 cencel-btn">
-                                <button type="submit" onclick="location.href='hp_result.html'" class="btn btn-secondary btn-lg px-3">다음</button>
-                            </div>
-                        </div>
+                </div>
                                 
                     
+                            </div>
+
+                            <div class="titlefoot col mt-2">
+                                <button type="submit" class="btn btn-secondary btn-lg px-3" id="infor-btn">이전</button>
+                                <button type="button" class="btn btn-secondary btn-lg px-3" id="infor-btn">다음</button>
                             </div>
 
                                 

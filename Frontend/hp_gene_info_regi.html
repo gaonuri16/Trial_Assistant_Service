@@ -44,6 +44,31 @@ https://templatemo.com/tm-559-zay-shop
         font-weight: number 500;
     }
 
+    /* 푸터 */
+    .under-footer {
+        height: 150px;
+    }
+
+    .footer-box2 {
+        padding: 20px 0px;
+        position: relative;
+        left: 160px;
+        bottom: 115px;
+        font-size: 17px !important;
+        font-weight: 100 !important;
+        line-height: 30px;
+    }
+
+    .titlefoot {
+        text-align: center;
+        margin: 70px auto;
+    }
+
+    #gene-num-msg {
+        font-size: 80%;
+        color: red;
+    }
+
 
 </style>
 
@@ -161,7 +186,7 @@ https://templatemo.com/tm-559-zay-shop
             <div class="container-fluid py-3">
                 <section class="container py-5">
                     <div class="announcement-detail-title">
-                      <h1>조력자 기본 정보 입력</h1>
+                      <h1>일반 조력자 기본 정보 입력</h1>
                       <hr>
                     </div>
 
@@ -173,10 +198,12 @@ https://templatemo.com/tm-559-zay-shop
                             <div class="form-group col-md-6 mb-3">
                                 <label for="inputname">이름</label>
                                 <input type="text" class="form-control mt-1" id="name" name="name">
+                                <span id="gene-num-msg">*필수 사항입니다.</span><!--자바스크립트에서 추가-->
                             </div>
                             <div class="form-group col-md-6 mb-3">
                                 <label for="inputsocnum">주민등록번호</label>
                                 <input type="text" class="form-control mt-1" id="soc-num" name="soc-num">
+                                <span id="gene-num-msg">*필수 사항입니다.</span><!--자바스크립트에서 추가-->
                             </div>
                         </div>
 
@@ -190,6 +217,7 @@ https://templatemo.com/tm-559-zay-shop
                             <div class="form-group col-md-6 mb-3">
                                 <label for="inputphonenum">휴대폰 번호</label>
                                 <input type="tel" class="form-control mt-1" id="phone-num" name="phone">
+                                <span id="gene-num-msg">*필수 사항입니다.</span><!--자바스크립트에서 추가-->
                             </div>
                         </div>
 
@@ -199,10 +227,12 @@ https://templatemo.com/tm-559-zay-shop
                             <div class="form-group col-md-6 mb-3">
                                 <label for="inputjob">직업</label>
                                 <input type="text" class="form-control mt-1" id="job" name="job">
+                                <span id="gene-num-msg">*필수 사항입니다.</span><!--자바스크립트에서 추가-->
                             </div>
                             <div class="form-group col-md-6 mb-3">
                                 <label for="inputemail">이메일</label>
                                 <input type="email" class="form-control mt-1" id="email" name="email">
+                                <span id="gene-num-msg">*필수 사항입니다.</span><!--자바스크립트에서 추가-->
                             </div>
                         </div>
 
@@ -215,7 +245,13 @@ https://templatemo.com/tm-559-zay-shop
                             </div>
                             <div class="form-group col-md-6 mb-3">
                                 <label for="inputhel-srttn">조력자 구분</label>
-                                <input type="text" class="form-control mt-1" id="hel-srttn" name="hel-srttn">
+                                <input type="text" class="form-control mt-1" list="hel-srttn" name="hel-srttn">
+                                <datalist id="hel-srttn">
+                                    <option>문서</option>
+                                    <option>측량</option>
+                                    <option>경매</option>
+                                </datalist>
+                                <span id="gene-num-msg">*필수 사항입니다.</span><!--자바스크립트에서 추가-->
                             </div>
                         </div>
 
@@ -225,6 +261,7 @@ https://templatemo.com/tm-559-zay-shop
                             <div class="form-group col-md-6 mb-3">
                                 <label for="inputbsnsnum">사업자 번호</label>
                                 <input type="text" class="form-control mt-1" id="bsns-num" name="bsns-num">
+                                <span id="gene-num-msg">*필수 사항입니다.</span><!--자바스크립트에서 추가-->
                             </div>
                             <div class="form-group col-md-6 mb-3">
                                 <label for="inputfax">팩스</label>
@@ -238,10 +275,12 @@ https://templatemo.com/tm-559-zay-shop
                             <div class="form-group col-md-6 mb-3">
                                 <label for="inputofcname">사무소명</label>
                                 <input type="text" class="form-control mt-1" id="ofc-name" name="ofc-name">
+                                <span id="gene-num-msg">*필수 사항입니다.</span><!--자바스크립트에서 추가-->
                             </div>
                             <div class="form-group col-md-6 mb-3">
                                 <label for="inputofcnum">사무소 번호</label>
                                 <input type="text" class="form-control mt-1" id="ofc-num" name="ofc-num">
+                                <span id="gene-num-msg">*필수 사항입니다.</span><!--자바스크립트에서 추가-->
                             </div>
                         </div>
                         
@@ -251,6 +290,7 @@ https://templatemo.com/tm-559-zay-shop
                             <label for="inputacaback">학력</label>
                             <textarea class="form-control mt-1" id="aca-back" name="aca-back" rows="10"></textarea>
                             <input type="file" class="form-control" id="inputGroupFile04" aria-describedby="inputGroupFileAddon04" aria-label="Upload">
+                            <span id="gene-num-msg">*필수 사항입니다.</span><!--자바스크립트에서 추가-->
 
                             <br>
                             <br>
@@ -259,6 +299,7 @@ https://templatemo.com/tm-559-zay-shop
                                 <label for="inputcarrer">경력</label>
                                 <textarea class="form-control mt-1" id="carrer" name="carrer" rows="10"></textarea>
                                <input type="file" class="form-control" id="inputGroupFile04" aria-describedby="inputGroupFileAddon04" aria-label="Upload">
+                               <span id="gene-num-msg">*필수 사항입니다.</span><!--자바스크립트에서 추가-->
                             </div>
                         </div>
 
@@ -271,15 +312,18 @@ https://templatemo.com/tm-559-zay-shop
                             <div class="form-group col-md-6 mb-3">
                                 <label for="inputbank">입금 은행</label>
                                 <input type="text" class="form-control mt-1" id="bank" name="bank">
+                                <span id="gene-num-msg">*필수 사항입니다.</span><!--자바스크립트에서 추가-->
                             </div>
                             <div class="form-group col-md-6 mb-3">
                                 <label for="inputacchol">예금주</label>
                                 <input type="text" class="form-control mt-1" id="acc-hol" name="acc-hol">
+                                <span id="gene-num-msg">*필수 사항입니다.</span><!--자바스크립트에서 추가-->
                             </div>
 
                             <div class="form-group col-md-6 mb-3">
                                 <label for="inputbanknum">계좌번호</label>
                                 <input type="text" class="form-control mt-1" id="acc-hol" name="acc-hol">
+                                <span id="gene-num-msg">*필수 사항입니다.</span><!--자바스크립트에서 추가-->
                             </div>
                         </div>
 
@@ -300,8 +344,8 @@ https://templatemo.com/tm-559-zay-shop
                         </div>
                         <div class="form-group">
                             <input type="text" name="dtladdr" class="form-control" id="dtladdr" placeholder="상세주소">
-                        </div>
-                        
+                            <span id="gene-num-msg">*필수 사항입니다.</span><!--자바스크립트에서 추가-->
+                        </div>      
                     </form>
                 </div>
             </div>
@@ -318,24 +362,15 @@ https://templatemo.com/tm-559-zay-shop
         <div class="container my-4">
             <div class="row text-center py-3">
                 <div class="col-lg-6 m-auto">
-                    <h1 class="h1"></h1>
-                    <p>
-                        
-                    </p>
-                </div>
-                <div class="col-lg-9 m-auto tempaltemo-carousel">
-                    <div class="row d-flex flex-row">
 
-                        <div class="row">
-                            <div class="col mt-2 join-btn">
-                                <button type="submit" class="btn btn-secondary btn-lg px-3">이전</button>
-                            </div>
-                            <div class="col mt-2 cencel-btn">
-                                <button type="submit" onclick="location.href='hp_result.html'" class="btn btn-secondary btn-lg px-3">다음</button>
-                            </div>
-                        </div>
+                </div>
                                 
                     
+                            </div>
+
+                            <div class="titlefoot col mt-2">
+                                <button type="submit" class="btn btn-secondary btn-lg px-3" id="infor-btn">이전</button>
+                                <button type="button" class="btn btn-secondary btn-lg px-3" id="infor-btn">다음</button>
                             </div>
 
                                 
