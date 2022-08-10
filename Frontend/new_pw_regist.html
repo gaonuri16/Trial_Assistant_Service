@@ -11,7 +11,6 @@
 
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/templatemo.css">
-    <link rel="stylesheet" href="assets/css/custom.css">
 
     <!-- Load fonts style after rendering the layout styles -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;700;900&display=swap">
@@ -26,11 +25,23 @@ https://templatemo.com/tm-559-zay-shop
 -->
 
 <style>
+ /* 푸터 */
+ .under-footer {
+        height: 150px;
+    }
 
+    .footer-box2 {
+        padding: 20px 0px;
+        position: relative;
+        left: 160px;
+        bottom: 115px;
+        font-size: 17px !important;
+        font-weight: 100 !important;
+        line-height: 30px;
+    }
 
 /* login.html의 css*/
 .title-box{
-    
     text-align: center;
     justify-content: center;
     margin: 0 auto 100px;
@@ -43,7 +54,10 @@ https://templatemo.com/tm-559-zay-shop
     font-weight: 500 !important;
 }
 
-
+.new_pw_box{
+    max-width: 400px;
+    min-width: 300px;
+}
 
 label {
     font-weight: 700 !important;
@@ -54,18 +68,22 @@ button:hover{
 }
 .btn-box{
     margin-top: 100px;
+    width: 100%;
+    text-align: center;
 }
 .Search-btn .cencel-btn{
     text-align: center;
 }
 
 .Search-btn{
-    float: left;
-    margin-left: 80px;
+    margin: 0 50px;
+        box-sizing: border-box;
+        display: inline-block;
 }
 .cencel-btn{
-    float: right;
-    margin-right: 100px;
+    margin: 0 50px;
+        box-sizing: border-box;
+        display: inline-block;
 }
 /* End join.html의 css*/
 
@@ -165,9 +183,9 @@ button:hover{
 <!-- Close Header -->
 
 <!-- Start 회원가입 -->
-<div class="container py-5">
-    <div class="row py-5">
-        <form class="col-md-4 m-auto" method="post" role="form">
+<div class="py-5">
+    <div>
+        <form class="new_pw_box m-auto" method="post" role="form">
 
             <div class="title-box">새 비밀번호 등록</div>
 
@@ -176,18 +194,18 @@ button:hover{
                 <label for="inputjoinPw">새 비밀번호</label>
                 <input type="text" class="form-control mt-1" id="joinPw" name="joinPw" placeholder="새 비밀번호를 입력하세요.">
             </div>
-            <div class="mb-3 ">
+            <div class="mb-3">
                 <label for="inputPwCheck">새 비밀번호 확인</label>
                 <input type="text" class="form-control mt-1" id="pwCheck" name="pwCheck">
             </div>
            
             <div class="btn-box">
                 <div class="col mt-2 Search-btn">
-                    <button type="submit" class="btn btn-secondary px-3">비밀번호 찾기</button>
+                    <button type="submit" class="btn btn-outline-secondary px-3">비밀번호 찾기</button>
                 </div>
                 
                 <div class="col mt-2 cencel-btn">
-                    <button type="submit" class="btn btn-secondary px-3">취소</button>
+                    <button type="submit" class="btn btn-outline-secondary px-3">취소</button>
                 </div>
             </div>
         </form>
