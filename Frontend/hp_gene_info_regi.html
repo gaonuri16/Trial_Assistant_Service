@@ -65,8 +65,19 @@ https://templatemo.com/tm-559-zay-shop
     }
 
     #gene-num-msg {
-        font-size: 80%;
+        font-size: 70%;
         color: red;
+    }
+
+    #hp-ge-srttn {
+        text-align: center;
+        padding: 8px;
+    }
+
+    #hp-ge-srbtn{
+        float: right;
+        margin-left: 60px;
+        padding-right: 30px;
     }
 
 
@@ -244,14 +255,27 @@ https://templatemo.com/tm-559-zay-shop
                                 <input type="text" class="form-control mt-1" id="hel-year" name="hel-year">
                             </div>
                             <div class="form-group col-md-6 mb-3">
-                                <label for="inputhel-srttn">조력자 구분</label>
-                                <input type="text" class="form-control mt-1" list="hel-srttn" name="hel-srttn">
-                                <datalist id="hel-srttn">
+                                <label for="inputhel-srttn">조력자 구분</label><span id="gene-num-msg"> *필수 사항입니다.</span><!--자바스크립트에서 추가-->
+
+                                <br>
+
+                                <div id="hp-ge-srttn">
+                                    <div  id="hp-ge-srbtn">
+                                    경매<input type="radio" name="rc-group2" value="5">
+                                </div>
+                                <div  id="hp-ge-srbtn">
+                                    문서<input type="radio" name="rc-group2" value="5">
+                                </div>
+                                <div  id="hp-ge-srbtn">
+                                    측량<input type="radio" name="rc-group2" value="5">
+                                </div>
+                                </div>
+
+                                <!-- <datalist id="hel-srttn">
                                     <option>문서</option>
                                     <option>측량</option>
                                     <option>경매</option>
-                                </datalist>
-                                <span id="gene-num-msg">*필수 사항입니다.</span><!--자바스크립트에서 추가-->
+                                </datalist> -->
                             </div>
                         </div>
 
