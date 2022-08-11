@@ -32,26 +32,24 @@ https://templatemo.com/tm-559-zay-shop
         margin: 70px auto;
     }
 
-    #infor-btn {
-        color: white;
-    }
-
-    #aca-back {
-        resize: none;
-    }
-
-    #carrer {
-        resize: none;
-    }
-
-    #inputGroupFile04 {
-
-        width: 50%;
-    }
-
     #bnsn-num-msg {
         font-size: 80%;
         color: red;
+    }
+
+    /* 푸터 */
+    .under-footer {
+        height: 150px;
+    }
+
+    .footer-box2 {
+        padding: 20px 0px;
+        position: relative;
+        left: 160px;
+        bottom: 115px;
+        font-size: 17px !important;
+        font-weight: 100 !important;
+        line-height: 30px;
     }
 
 </style>
@@ -167,26 +165,30 @@ https://templatemo.com/tm-559-zay-shop
     <!-- Start Content -->
     <div class="container py-5">
         <div class="row">
-
             <div class="container-fluid py-3">
-                <div class="col-md-7">
-                    <h1>조력자 신청자 정보 입력</h1><hr width="1250">
-                </div>
+                <section class="container py-5">
+                    <div>
+                        <h1>기관 추천 조력자 신청</h1><hr width="1250">
+                    </div>
+                </section>
             </div>
 
             <form class="col-md-5 m-auto" method="post" role="form" id="instt-info">
                 <div class="mb-3">
-                    <label for="inputJoinId">사업자 번호</label>
-                        <div class="input-group mb-3">
-                            <input type="text" class="form-control" id="joinId" name="joinId">
+                    <label for="inputbnsnnum">사업자 번호</label>
+                        <div class="input-group">
+                            <input type="text" class="form-control" id="bnsn-num" name="bnsn-num">
+                            <button class="btn btn-success">기관 등록 여부 확인</button>
                         </div>
                         <span id="bnsn-num-msg">*필수 사항입니다.</span><!--자바스크립트에서 추가-->
+                        
                         
                         <br>
                         <br>
 
-                    기관 추천 조력자 신청서 업로드하기
+                    신청서 업로드하기    
                     <input type="file" class="form-control" id="inputGroupFile04" aria-describedby="inputGroupFileAddon04" aria-label="Upload">
+                </div>        
             </form>
 
     <!-- End Content -->
@@ -198,24 +200,15 @@ https://templatemo.com/tm-559-zay-shop
         <div class="container my-4">
             <div class="row text-center py-3">
                 <div class="col-lg-6 m-auto">
-                    <h1 class="h1"></h1>
-                    <p>
-                        
-                    </p>
-                </div>
-                <div class="col-lg-9 m-auto tempaltemo-carousel">
-                    <div class="row d-flex flex-row">
 
-                        <div class="row">
-                            <div class="col mt-2 join-btn">
-                                <button type="submit" class="btn btn-secondary btn-lg px-3">이전</button>
-                            </div>
-                            <div class="col mt-2 cencel-btn">
-                                <button type="submit" onclick="location.href='hp_result.html'" class="btn btn-secondary btn-lg px-3">다음</button>
-                            </div>
-                        </div>
+                </div>
                                 
                     
+                            </div>
+
+                            <div class="titlefoot col mt-2">
+                                <button type="submit" class="btn btn-secondary btn-lg px-3" id="infor-btn">이전</button>
+                                <button type="button" class="btn btn-secondary btn-lg px-3" id="infor-btn">다음</button>
                             </div>
 
                                 
@@ -232,7 +225,7 @@ https://templatemo.com/tm-559-zay-shop
     <!--End Brands-->
 
 
-   <!-- Start Footer 회원 -->
+  <!-- Start Footer 회원 -->
 <footer class="bg-dark" id="tempaltemo_footer">
     <div class="container">
         <div class="row">
@@ -272,7 +265,7 @@ https://templatemo.com/tm-559-zay-shop
         </div>
 
     </div>
-    </footer>
+</footer>
 
 
 
@@ -350,8 +343,6 @@ https://templatemo.com/tm-559-zay-shop
     
 
 </footer>
-
-   
 
 <!-- End Footer -->
 
