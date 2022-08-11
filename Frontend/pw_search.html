@@ -41,7 +41,10 @@ https://templatemo.com/tm-559-zay-shop
     color: rgb(132, 127, 127);
     font-weight: 500 !important;
 }
-
+.form-box{
+    max-width: 600px;
+    min-width: 400px;
+}
 
 
 label {
@@ -53,6 +56,14 @@ button:hover{
 }
 .btn-box{
     margin-top: 100px;
+    width: 400px;
+    padding: 0 80px;
+
+}
+.btn-box::after{
+    content: "";
+    display: block;
+    clear: both;
 }
 .Search-btn .cencel-btn{
     text-align: center;
@@ -60,11 +71,11 @@ button:hover{
 
 .Search-btn{
     float: left;
-    margin-left: 80px;
+    margin-right: 50px;
 }
 .cencel-btn{
-    float: right;
-    margin-right: 100px;
+    float: left;
+
 }
 /* End join.html의 css*/
 
@@ -166,7 +177,7 @@ button:hover{
 <!-- Start 회원가입 -->
 <div class="container py-5">
     <div class="row py-5">
-        <form class="col-md-4 m-auto" method="post" role="form">
+        <form class="col-md-4 m-auto form-box" method="post" role="form">
 
             <div class="title-box">비밀번호 찾기</div>
 
@@ -175,9 +186,17 @@ button:hover{
                 <label for="inputJoinName">이름</label>
                 <input type="text" class="form-control mt-1" id="joinName" name="joinName" placeholder="이름을 입력하세요.">
             </div>
-            <div class="mb-3 ">
-                <label for="inputJoinSocNum">주민등록번호</label>
-                <input type="text" class="form-control mt-1" id="joinSocNum" name="joinSocNum" placeholder="주민등록번호를 입력하세요.">
+            
+            <div class="row">
+                <div class="form-group col-md-6 mb-2">
+                    <label for="inputname">주민등록번호</label>
+                    <input type="text" class="form-control mt-1" id="joinSocNum1" name="joinSocNum1" placeholder="앞 6자리">
+                </div>
+
+                <div class="form-group col-md-6 mb-2">
+                    <label for="inputemail"></label>
+                    <input type="text" class="form-control mt-1" id="joinSocNum2" name="joinSocNum2" placeholder="뒷 7자리">
+                </div>
             </div>
            
             <div class="btn-box">
