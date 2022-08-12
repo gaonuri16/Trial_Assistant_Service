@@ -2,7 +2,7 @@ package com.spring.pr.board.service;
 
 import java.util.List;
 
-import com.spring.pr.vo.BoardVO;
+import com.spring.pr.command.BoardVO;
 
 public interface IBoardService {
 	

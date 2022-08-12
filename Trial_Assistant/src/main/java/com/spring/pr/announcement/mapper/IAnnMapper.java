@@ -1,11 +1,11 @@
-package com.spring.pr.board.mapper;
+package com.spring.pr.announcement.mapper;
 
 import java.util.List;
 
 import com.spring.pr.command.BoardVO;
 
-public interface IBoardMapper {
-
+public interface IAnnMapper {
+	
 	// 글 등록 
 	void regist(BoardVO board);
 	
@@ -23,4 +23,6 @@ public interface IBoardMapper {
 	
 	// 삭제 
 	void delete(int bno);
+	
+
 }
