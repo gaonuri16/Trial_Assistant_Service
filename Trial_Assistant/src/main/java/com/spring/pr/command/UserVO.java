@@ -1,4 +1,4 @@
-package com.spring.pr.vo;
+package com.spring.pr.command;
 
 import lombok.Getter;
 import lombok.Setter;

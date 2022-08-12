@@ -1,4 +1,4 @@
-package com.spring.pr.vo;
+package com.spring.pr.command;
 
 import java.security.Timestamp;
 
